@@ -1,4 +1,4 @@
-# Solemne-2--secc3
+# Solemne-2- pensamiento computacional-secc3
 Sobre el proceso de mi solemne dos, tanto los errores como los códigos correctos.
 ## sobre este respositorio
 - Nombre del proyecto
