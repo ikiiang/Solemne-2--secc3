@@ -28,4 +28,45 @@ Por esto mismo se me ocurrió mezclar ambas ideas en la obra y como el sistema d
 - Primero elegi las variables de la cantidad de figuras para la cual luego de disntintas pruebas visuales me quede con 
 let cantidad = 12;
 let separacion = 20;
-estas varia
+Con esto definí cuántos círculos aparecerían dentro de cada módulo y la distancia entre ellos. Probé distintas cantidades, pero con demasiadas figuras la composición comenzaba a verse saturada visualmente, (PONER IMAGEN)
+
+ por lo que 12 me permitió mantener un mejor equilibrio.
+
+Después comencé el setup() creando el lienzo donde se iba a dibujar toda la composición. Elegí un canvas cuadrado de 600x600 porque permitía distribuir los módulos de forma más ordenada dentro del espacio. También usé ellipseMode(CENTER) para que las figuras se dibujaran desde el centro y así controlar mejor las deformaciones y rotaciones.
+
+Luego, dentro de draw(), agregué un fondo blanco para limpiar el frame constantemente y evitar rastros del movimiento.
+
+Después hice dos recorridos con for para organizar las figuras en filas y columnas, generando una retícula repetitiva parecida a un patrón modular. Utilicé separaciones de 120 píxeles porque cuando probé distancias más pequeñas los módulos comenzaban a superponerse y perdían legibilidad visual.
+
+Dentro de cada módulo usé push() y pop() para que cada figura tuviera su propia transformación independiente. Luego, con translate(x,y), moví el punto de origen hacia cada posición de la grilla.
+
+Después calculé la distancia entre el mouse y cada módulo:
+
+let distancia = dist(x,y,mouseX,mouseY);
+
+Posteriormente transformé esa distancia en un ángulo para generar rotación:
+
+let angulo = map(distancia,0,width,1,-1);
+
+rotate(angulo);
+
+Mientras más cerca estaba el mouse, mayor era el cambio en la orientación de las figuras.
+
+Luego hice otro for para dibujar múltiples círculos dentro de cada módulo. El tamaño de cada círculo dependía de la variable i, generando un efecto concéntrico:
+
+let tamano = i * separacion;
+
+Después llamé la función cambiarColor(i) para alternar blanco y negro:
+
+function cambiarColor(i){
+
+  if(i % 2 == 0){
+ fill(0);
+} else {
+fill(255);
+  }
+}
+
+Usé % para alternar colores y generar mayor contraste visual. Finalmente modifiqué el grosor de línea y la deformación de las figuras según la cercanía y movimiento del mouse, logrando una composición más dinámica e interactiva. El uso de pop() permitió que cada módulo mantuviera su propia posición y rotación sin afectar a los demás elementos. 
+                (AKI IMAGEN)
+                
