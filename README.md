@@ -2,20 +2,19 @@
 Sobre el proceso de mi solemne dos, tanto los errores como los códigos correctos.
 ## sobre este respositorio
 - Nombre del proyecto
+- Inspiración
 - Proceso
-- Descripción del diseño
-- Inputs, Ouputs
-- Idea central y referentes
+- Resultado
 - Diagrama de flujo
 
-**Nombre del proyecto:** 
+##Nombre del proyecto 
 Op art interactivo
 *Autor:* Angela Sepulveda
 El proyecto se basa en un sistema visual interactivo, inspirado en el movimiento artístico Op Art el cual busca demostrar que al poner distintos comandos se puede producir comportamientos visuales complejos y dinamicos.
 
 ## Inspiración    
 Como se menciono anteriormente, al estar buscando referentes de ideas me quede con el "Op Art" y opte por la idea de hacerlo blanco y negro porque se aprecia muy bien los cambios al estar interactuando con el programa, por esto mismo tome de referencia a 
-**Bridget Riley:**(nacida en 1931), una figura clave en el movimiento del Arte Óptico (obra con fecha de 1962)
+**Bridget Riley:**(nacida en 1931),destacada pintora británica y una figura clave en el movimiento del Arte Óptico (obra con fecha de 1962)Usa figuras geométricas y colores para crear ilusiones de movimientoy cabe destacar que fue la primera mujer en ganar el premio de pintura de la Bienal de Venecia (1968).
 
 ![imagen](https://cdn.sanity.io/images/dqllnil6/production/640d2e161b65ce09a179cf327d42c3520560261b-1008x1010.jpg?w=1080&q=60&auto=format)       
 y a la vez busque en varios sitios este tipo de obras:        
@@ -28,7 +27,8 @@ Por esto mismo se me ocurrió mezclar ambas ideas en la obra y como el sistema d
 - Primero elegi las variables de la cantidad de figuras para la cual luego de disntintas pruebas visuales me quede con 
 let cantidad = 12;
 let separacion = 20;
-Con esto definí cuántos círculos aparecerían dentro de cada módulo y la distancia entre ellos. Probé distintas cantidades, pero con demasiadas figuras la composición comenzaba a verse saturada visualmente, (PONER IMAGEN)
+Con esto definí cuántos círculos aparecerían dentro de cada módulo y la distancia entre ellos. Probé distintas cantidades, pero con demasiadas figuras la composición comenzaba a verse saturada visualmente,
+![imagen](s2pc/fig1.jpeg)
 
  por lo que 12 me permitió mantener un mejor equilibrio.
 
@@ -66,7 +66,14 @@ function cambiarColor(i){
 fill(255);
   }
 }
-
 Usé % para alternar colores y generar mayor contraste visual. Finalmente modifiqué el grosor de línea y la deformación de las figuras según la cercanía y movimiento del mouse, logrando una composición más dinámica e interactiva. El uso de pop() permitió que cada módulo mantuviera su propia posición y rotación sin afectar a los demás elementos. 
-                (AKI IMAGEN)
+## Resultado 
+Finalmente p5.js logra crear un patrón interactivo de círculos que se deforman y rotan dinámicamente según el movimiento del mouse (imagen de uno de los resultados posibles)
+![imagen](s2pc/fig3.jpeg)
+
+## Diagrama de flujo
+El siguiente diagrama de flujo representa el funcionamiento del sistema generativo desarrollado en p5.js. En él se muestran las variables principales, los bucles, las condiciones y la interacción con el mouse que permiten generar patrones dinámicos y deformaciones en los círculos.
+![imagen](s2pc/diagrama.jpg)
+
+           
                 
