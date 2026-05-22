@@ -2,20 +2,30 @@
 Sobre el proceso de mi solemne dos, tanto los errores como los códigos correctos.
 ## sobre este respositorio
 - Nombre del proyecto
+- Descripción
 - Inspiración
 - Proceso
 - Resultado
 - Diagrama de flujo
 
-##Nombre del proyecto 
-Op art interactivo
-*Autor:* Angela Sepulveda
+## Nombre del proyecto      
+Op art interactivo   
+**Autor:** Angela Sepulveda
 El proyecto se basa en un sistema visual interactivo, inspirado en el movimiento artístico Op Art el cual busca demostrar que al poner distintos comandos se puede producir comportamientos visuales complejos y dinamicos.
 
-## Inspiración    
+## Descripción 
+**Qué se ve en pantalla**      
+En pantalla se observa un patrón de círculos distribuidos en filas y columnas que reaccionan dinámicamente al movimiento del mouse.    
+**Qué elementos visuales aparecen**      
+Aparecen elipces en blanco y negro, rotaciones dinámicas, variaciones de grosor en las líneas y deformaciones que cambian según la interacción del usuario.    
+**Qué inputs utiliza**     
+El sistema utiliza como input la posición del mouse en el eje horizontal y vertical (mouseX y mouseY), permitiendo modificar la deformación, rotación y comportamiento visual de las figuras.     
+**Qué outputs genera**       
+El output generado es una composición visual interactiva y dinámica donde los círculos cambian su forma, orientación y apariencia en tiempo real según el movimiento del usuario.
+
+## Inspiración      
 Como se menciono anteriormente, al estar buscando referentes de ideas me quede con el "Op Art" y opte por la idea de hacerlo blanco y negro porque se aprecia muy bien los cambios al estar interactuando con el programa, por esto mismo tome de referencia a 
 **Bridget Riley:**(nacida en 1931),destacada pintora británica y una figura clave en el movimiento del Arte Óptico (obra con fecha de 1962)Usa figuras geométricas y colores para crear ilusiones de movimientoy cabe destacar que fue la primera mujer en ganar el premio de pintura de la Bienal de Venecia (1968).
-
 ![imagen](https://cdn.sanity.io/images/dqllnil6/production/640d2e161b65ce09a179cf327d42c3520560261b-1008x1010.jpg?w=1080&q=60&auto=format)       
 y a la vez busque en varios sitios este tipo de obras:        
 ![imagen](https://i1-e.pinimg.com/736x/b6/d1/87/b6d187af7261b33fb093c3eeb9c0dc5b.jpg)     
