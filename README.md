@@ -25,4 +25,7 @@ A partir de la exploración de patrones visuales, surgió la idea de mezclar dos
 Por esto mismo se me ocurrió mezclar ambas ideas en la obra y como el sistema debe ser dinamico decidí que los círculos cambiaran según la interacción del mouse.
 
 ## PROCEDIMIENTO
-- 
+- Primero elegi las variables de la cantidad de figuras para la cual luego de disntintas pruebas visuales me quede con 
+let cantidad = 12;
+let separacion = 20;
+estas varia
